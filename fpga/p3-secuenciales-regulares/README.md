@@ -1,17 +1,5 @@
-# p3-secuenciales-regulares
+# FPGA · Práctica 3: Circuitos secuenciales regulares (contador, PWM, reset)
+**Video:** [YouTube — pendiente de enlace](https://youtu.be/REEMPLAZAR_ID) · **Guía:** [guia.pdf](guia.pdf) · **Informe de referencia:** [practica.pdf](practica.pdf)
 
-**Libro:** Arquitectura de hardware programable (Serpa, Chasi y Bueno, UPS) · Apéndice de prácticas.
-
-## Video de funcionamiento
-[![Ver video](https://img.shields.io/badge/YouTube-ver%20video-red)](https://youtu.be/REEMPLAZAR_ID)
-
-## Contenido de esta carpeta
-- `codigo/` — proyecto completo (Vivado / STM32CubeIDE / MPLAB X / PlatformIO).
-- `guia.pdf` — guía de la práctica (extraída del libro).
-- `esquema.png` — esquema de conexión.
-
-## Materiales
-(copiar de la guía)
-
-## Resultado esperado
-(una o dos líneas y, si aplica, captura del osciloscopio o terminal)
+- `codigo/Circuito_Secuencial_Regular/` — `counter.vhd`, `pwm.vhd`, `pwm_led.vhd` (top), `reset.vhd`, `pines.xdc`.
+- `docs/` — fuentes LaTeX de la guía y del informe.

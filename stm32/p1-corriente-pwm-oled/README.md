@@ -1,17 +1,6 @@
-# p1-corriente-pwm-oled
+# STM32 · Práctica 1: Medición de corriente con PWM visualizada en OLED SSD1351
+**Video:** [YouTube — pendiente de enlace](https://youtu.be/REEMPLAZAR_ID) · **Guía:** [guia.pdf](guia.pdf) · **Informe de referencia:** [practica.pdf](practica.pdf)
 
-**Libro:** Arquitectura de hardware programable (Serpa, Chasi y Bueno, UPS) · Apéndice de prácticas.
-
-## Video de funcionamiento
-[![Ver video](https://img.shields.io/badge/YouTube-ver%20video-red)](https://youtu.be/REEMPLAZAR_ID)
-
-## Contenido de esta carpeta
-- `codigo/` — proyecto completo (Vivado / STM32CubeIDE / MPLAB X / PlatformIO).
-- `guia.pdf` — guía de la práctica (extraída del libro).
-- `esquema.png` — esquema de conexión.
-
-## Materiales
-(copiar de la guía)
-
-## Resultado esperado
-(una o dos líneas y, si aplica, captura del osciloscopio o terminal)
+- `codigo/MOTOR_SPI_FINAL/` (incluye `ssd1351.c/.h`)
+- Proyectos STM32CubeIDE (STM32F407G-DISC1): importar con *File → Import → Existing Projects into Workspace*; el `.ioc` regenera la configuración. Se omitieron `Debug/` y `.settings/`.
+- `docs/` — fuentes LaTeX.

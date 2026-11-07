@@ -1,0 +1,212 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{array}
+\usepackage{makecell}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{enumitem}
+\usepackage{amsmath}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{hyperref}
+\usepackage{spverbatim}
+\usepackage[linesnumbered,ruled,vlined]{algorithm2e}
+\usepackage[backend=bibtex]{biblatex}
+\addbibresource{referencias.bib}
+\usepackage{amssymb}
+\usepackage{gensymb}
+\usepackage{fancyhdr} % <- Nuevo paquete
+
+\geometry{margin=1.7cm}
+
+% IMPORTANTE: ajusta headheight para reservar espacio al encabezado
+\setlength{\headheight}{3cm} % Ajusta según el alto real del encabezado
+\setlength{\headsep}{0.5cm}  % Espacio entre encabezado y texto
+
+\renewcommand{\arraystretch}{1.1}
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
+
+% === Encabezado personalizado con imagen y tabla ===
+\pagestyle{fancy}
+\fancyhf{} % Limpiar encabezados/footers
+
+\fancyhead[L]{%
+  \begin{tabular}{|@{}p{2.5cm}@{}|p{9cm}|p{4.5cm}|}
+    \hline
+    \multirow{2}{*}{\includegraphics[height=0.6cm]{logo_ups.png}} & \textbf{VICERRECTORADO DOCENTE} & Código: GUIA-PRL-001 \\
+    & \textbf{CONSEJO ACADÉMICO} & Aprobación: 2016/04/06 \\
+    \hline
+    \multicolumn{3}{|p{16cm}|}{Formato: Guía de Práctica de Laboratorio / Talleres / Centros de Simulación} \\
+    \hline
+  \end{tabular}
+}
+
+\fancyfoot[C]{} % Pie vacío
+
+\begin{document}
+
+% Elimina o reduce mucho el espacio vertical inicial
+%\vspace{4.5cm} 
+
+% ===== FORMATO DE PRÁCTICA (tabla principal) =====
+\noindent
+\begin{tabular}{|P{2cm} P{2.5cm} P{2.5cm} P{7cm} P{2cm} P{2cm}|}
+\hline
+\multicolumn{3}{|c|}{
+  \parbox[c][2.2cm][c]{7cm}{\centering
+    \includegraphics[height=1.8cm]{logo_ups.png}
+  }
+} 
+& 
+\multicolumn{3}{c|}{
+  \parbox[c][2.2cm][c]{10cm}{\centering
+  \textbf{FORMATO DE GUÍA DE PRÁCTICA DE LABORATORIO / TALLERES / CENTROS DE SIMULACIÓN –PARA DOCENTES}}
+} \\ \hline
+
+\multicolumn{3}{|P{7cm}|}{CARRERA: TELECOMUNICACIONES} & \multicolumn{3}{P{10cm}|}{ASIGNATURA: } \\ \hline
+\multicolumn{2}{|P{4.5cm}|}{NRO. PRÁCTICA:} & \multicolumn{1}{P{2.5cm}|}{4} & \multicolumn{3}{P{10cm}|}{TÍTULO PRÁCTICA: MÁQUINA DE ESTADOS FINITOS (FSM) } \\ \hline
+
+% OBJETIVOS
+\multicolumn{6}{|P{17cm}|}{
+\begin{tabular}[c]{@{}P{16.8cm}@{}}
+\textbf{OBJETIVO(S):}\\[2pt]
+\begin{itemize}[leftmargin=*, nosep]
+  \item Implementar la descripción de hardware de una FSM.
+  \item Analizar los elementos de descripción de hardware usados en el circuito necesarios para una maquina de estados.
+\end{itemize}
+\end{tabular}
+} \\ \hline
+
+% INSTRUCCIONES
+% INSTRUCCIONES
+\multicolumn{2}{|P{4cm}|}{INSTRUCCIONES} &
+\multicolumn{4}{P{13.5cm}|}{
+\includegraphics[width=0.3\linewidth]{mealy.png}
+Para esta práctica, se propone implementar la maquinan de estado tipo Melay como se muestra en la imagen, en esta se debe condigurar un switch que servira como "llave" la cual en base al estado actual lee el valor de la llave para determinar el siguiente estado en cada flanco de reloj.
+
+} \\ \hline
+
+
+\multicolumn{6}{|P{17cm}|}{\centering \textbf{ACTIVIDADES POR DESARROLLAR}} \\ \hline
+\multicolumn{6}{|P{17cm}|}{1. Revisar la teoría explicada en clase para elaborar la logica programable} \\ \hline
+\multicolumn{6}{|P{17cm}|}{2. Diseñar el circuito con las características requeridas y las restricciones enviadas} \\ \hline
+\multicolumn{6}{|P{17cm}|}{4. Realizar el codigo y verificar los resultados obtenidos de la práctica.} \\ \hline
+
+
+% RESULTADOS
+\multicolumn{6}{|P{17cm}|}{
+\begin{tabular}[c]{@{}P{16.8cm}@{}}
+\textbf{RESULTADO(S) OBTENIDO(S):}\\[2pt]
+\begin{itemize}[leftmargin=*, nosep]
+  \item Realizar procesos de investigación sobre uso de timer y divisores de frecuencia.
+  \item Entender las aplicaciones de las maquinas de estado.
+\end{itemize}
+\end{tabular}
+} \\ \hline
+
+% CONCLUSIONES
+\multicolumn{6}{|P{17cm}|}{
+\begin{tabular}[c]{@{}P{16.8cm}@{}}
+\textbf{CONCLUSIONES:}\\[2pt]
+Aprenden a trabajar en grupo dentro de plazos de tiempo establecidos, manejando software de diseño, colocando las características y restricciones propuestas.
+\end{tabular}
+} \\ \hline
+
+% RECOMENDACIONES
+\multicolumn{6}{|P{17cm}|}{
+\begin{tabular}[c]{@{}P{16.8cm}@{}}
+\textbf{RECOMENDACIONES:}\\[2pt]
+Verificar las condiciones de cambio de estados.
+\end{tabular}
+} \\ \hline
+
+\end{tabular}
+
+\vspace{1cm}
+
+\noindent Docente / Técnico Docente: \rule{8cm}{0.4pt} \\[0.5cm]
+\noindent Firma: \rule{9cm}{0.4pt}
+
+\newpage
+
+
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|P{2cm} P{2.5cm} P{2.5cm} P{10cm}|}
+\hline
+\multicolumn{3}{|c|}{
+  \parbox[c][2.2cm][c]{7cm}{\centering
+    \includegraphics[height=1.8cm]{logo_ups.png}
+  }
+} 
+& 
+\parbox[c][2.2cm][c]{10cm}{\centering
+  \textbf{FORMATO DE GUÍA DE PRÁCTICA DE LABORATORIO / TALLERES / CENTROS DE SIMULACIÓN – PARA ESTUDIANTES}
+} \\ \hline
+
+\multicolumn{3}{|P{7cm}|}{\textbf{CARRERA:}} & \textbf{ASIGNATURA:} Sistemas Embebidos \\ \hline
+\multicolumn{2}{|P{4.5cm}|}{\textbf{NRO. PRÁCTICA:4}} &  & \textbf{TÍTULO PRÁCTICA:MÁQUINA DE ESTADOS FINITOS (FSM)} \\ \hline
+
+\multicolumn{4}{|P{17cm}|}{
+  \begin{minipage}[t]{16.8cm}
+    \textbf{OBJETIVO(S) ALCANZADO(S):} \\[4pt]
+    \begin{itemize}[leftmargin=*, nosep]
+      \item 
+      \item 
+      \item 
+    \end{itemize}
+  \end{minipage}
+} \\ \hline
+
+
+\multicolumn{4}{|c|}{\textbf{ACTIVIDADES DESARROLLADAS}} \\ \hline
+\multicolumn{4}{|P{17cm}|}{
+  \begin{itemize}[leftmargin=*, nosep]
+    \item[1.] 
+    \item[2.] 
+    \item[3.] 
+    \item[4.] 
+    \item[5.] 
+    \item[6.] 
+    \item[N.] 
+  \end{itemize}
+} \\ \hline
+
+\multicolumn{4}{|P{17cm}|}{
+  \parbox[t]{16.8cm}{
+    \textbf{RESULTADO(S) OBTENIDO(S):} \\[2pt]
+    \vspace{2cm}
+  }
+} \\ \hline
+
+
+\multicolumn{4}{|P{17cm}|}{
+  \parbox[t]{16.8cm}{
+    \textbf{CONCLUSIONES:} \\[2pt]
+    \vspace{2cm}
+  }
+} \\ \hline
+
+
+\multicolumn{4}{|P{17cm}|}{
+  \parbox[t]{16.8cm}{
+    \textbf{RECOMENDACIONES:} \\[2pt]
+    \vspace{2cm}
+  }
+} \\ \hline
+
+
+\end{tabular}
+\end{table}
+
+\vspace{1cm}
+
+\noindent Nombre del estudiante: \rule{8cm}{0.4pt} \\[0.5cm]
+
+
+
+
+\end{document}

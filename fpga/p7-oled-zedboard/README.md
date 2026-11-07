@@ -1,17 +1,5 @@
-# p7-oled-zedboard
+# FPGA · Práctica 7: Sumador de 3 bits con OLED (ZedBoard)
+**Video:** _pendiente_ · **Guías:** [guia_zedboard_1.pdf](guia_zedboard_1.pdf), [guia_zedboard_2.pdf](guia_zedboard_2.pdf) · **Informes:** [practica_zedboard_1.pdf](practica_zedboard_1.pdf), [practica_zedboard_2.pdf](practica_zedboard_2.pdf)
 
-**Libro:** Arquitectura de hardware programable (Serpa, Chasi y Bueno, UPS) · Apéndice de prácticas.
-
-## Video de funcionamiento
-[![Ver video](https://img.shields.io/badge/YouTube-ver%20video-red)](https://youtu.be/REEMPLAZAR_ID)
-
-## Contenido de esta carpeta
-- `codigo/` — proyecto completo (Vivado / STM32CubeIDE / MPLAB X / PlatformIO).
-- `guia.pdf` — guía de la práctica (extraída del libro).
-- `esquema.png` — esquema de conexión.
-
-## Materiales
-(copiar de la guía)
-
-## Resultado esperado
-(una o dos líneas y, si aplica, captura del osciloscopio o terminal)
+- `codigo/zedboard/` — proyecto Vivado de la práctica.
+- `codigo/ZedBoard-OLED-master/` — controlador OLED de Michael Mattioli (licencia MIT, 2017), usado como base.
